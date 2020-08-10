@@ -36,12 +36,13 @@
     /* cursor turns into a clicker pointer on hover */
     cursor: pointer;
     /* transition for the buy button animation */
-    transition: 1s;
+    transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .Header button:hover {
     background: white;
     box-shadow: 0 10px 20px rgba(0,0,0,025);
+    transform: translateY(-3px);
 }
 
 /* screen less than 640px will use this layout */

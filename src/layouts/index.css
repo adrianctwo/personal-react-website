@@ -18,6 +18,7 @@ a {
 }
 
 .Hero {
+  position: relative;
   background: url(../images/background2.jpg);
   height: 920px;
   /* image covers the whole Hero div. This will stop the iamge from auto-resizing*/
@@ -38,12 +39,27 @@ a {
   color: white;
   font-size: 60px;
   line-height:1.2;
+  opacity: 0;
+  animation: HeroAnimation;
+  animation-duration: 3s;
+  animation-delay: 0.1s;
+  /* setting the animation to forward so it doesn't change opacity to 0 */
+  animation-fill-mode: forwards;
+  animation-timing-function: cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .Hero p {
   color: rgba(255,255,255, 0.8);
   font-size: 30px;
   line-height: 1.5;
+  opacity: 0;
+  animation: HeroAnimation 3s 0.2s forwards cubic-bezier(0.2, 0.8, 0.2, 1)
+}
+
+.Hero a:hover {
+  background: white;
+  color: black;
+  transition: 1s cubic-bezier(0.2, 0.8, 0.2, 1);
 }
 
 .Hero a {
@@ -69,4 +85,21 @@ a {
   .Hero p {
     font-size: 24px;
   }
+}
+
+@keyframes HeroAnimation {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+.Hero svg {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }
