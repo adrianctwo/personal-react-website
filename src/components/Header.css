@@ -1,0 +1,61 @@
+.Header {
+    position: fixed;
+    width: 100%;
+    padding: 50px 0;
+    /* headers is set to be always on top of everything else */
+    z-index: 100;
+}
+
+.HeaderGroup {
+    max-width: 800px;
+    margin: 0 auto;
+    /* Using grid system for the header layout */
+    display: grid;
+    /* using colums for the 5 items in the header and auto spacing each element */
+    grid-template-columns: repeat(5, auto);
+    /* center items vertically */
+    align-items: center;
+    /* center items horizontally */
+    justify-items: center;
+}
+
+.Header a {
+    color: white;
+    font-weight: 700;
+}
+
+.Header button {
+    padding: 8px 20px;
+    font-size: 20px;
+    background: #349FF5;
+    border: none;
+    font-weight: 700;
+    /* round buttons */
+    border-radius: 10px;
+    outline: none;
+    /* cursor turns into a clicker pointer on hover */
+    cursor: pointer;
+    /* transition for the buy button animation */
+    transition: 1s;
+}
+
+.Header button:hover {
+    background: white;
+    box-shadow: 0 10px 20px rgba(0,0,0,025);
+}
+
+/* screen less than 640px will use this layout */
+@media (max-width: 640px) {
+    .Header {
+        padding: 15px 0;
+    }
+
+    .HeaderGroup {
+        grid-template-columns: repeat(4, auto);
+    }
+
+    /* Hiding the 4th a element in the header */
+    .Header a:nth-child(4) {
+        display: none;
+    }
+}
