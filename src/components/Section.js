@@ -25,18 +25,16 @@ const SectionLogo = styled.img`
 const SectionTitleGroup = styled.div`
     display: grid;
     grid-template-columns: 300px auto;
-    margin: 0 500px;
+    margin: 0 auto 40px;
     grid-gap: 20px;
     grid-template-rows: auto 100%;
+    max-width: 1000px;
 
-    @media (max-width: 1500px) {
-        margin: 0 250px;
+
+    @media (max-width: 1024px)  {
+        max-width: 800px;
     }
-
-    @media (max-width: 1000px) {
-        margin: 0 40px
-    }
-
+    
     @media (max-width: 720px) {
         grid-template-columns: 1fr;
     }
@@ -64,7 +62,7 @@ const WaveBottom = styled.div`
 const WaveTop = styled.div`
     position: absolute;
     width: 100%;
-    top: -6px;
+    top: -7px;
     transform: rotate(180deg);
 `
 

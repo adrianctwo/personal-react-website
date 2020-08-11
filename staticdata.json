@@ -1,0 +1,52 @@
+{
+    "cells": [
+        {
+            "title": "HTLM5",
+            "image": "https://i.postimg.cc/FsNKpYYS/html.png"
+        },
+        {
+            "title": "CSS",
+            "image": "https://i.postimg.cc/zBZtWZxJ/CSS.png"
+        },
+        {
+            "title": "React.JS.",
+            "image": "https://i.postimg.cc/DyqrN4fP/logo-react.png"
+        },
+        {
+            "title": "Javascript",
+            "image": "https://i.postimg.cc/j2T1V0f8/Java-Script.png"
+        },
+        {
+            "title": "Node.JS",
+            "image": "https://i.postimg.cc/fRM0VHc6/node.png"
+        },
+        {
+            "title": " AJAX",
+            "image": "https://i.postimg.cc/cL3f3K2n/ajax.png"
+        },
+        {
+            "title": "JSON",
+            "image": "https://i.postimg.cc/7LGPh7WF/json.png"
+        },
+        {
+            "title": " JQuery",
+            "image": "https://i.postimg.cc/Kcg9fY6m/jquery.png"
+        },
+        {
+            "title": "MongoDB",
+            "image": "https://i.postimg.cc/Y0Vbp5LK/mongodb.png"
+        },
+        {
+            "title": "MySQL",
+            "image": "https://i.postimg.cc/L47TZM5G/mysql.png"
+        },
+        {
+            "title": "Adobe XD",
+            "image": "https://i.postimg.cc/ncHW0xpr/Adobe-XD.png"
+        },
+        {
+            "title": "Figma",
+            "image": "https://i.postimg.cc/bw5Fy2bS/logo-figma.pngg"
+        }
+    ]
+}

@@ -3,6 +3,29 @@ import Link from 'gatsby-link'
 import Card from '../components/Card'
 import Section from '../components/Section'
 import Wave from '../components/Wave'
+import staticdata from '../../staticdata.json'
+import Cell from '../components/Cell'
+import styled from 'styled-components'
+
+const SectionCaption =styled.p`
+  font-weight: 600;
+  font-size: 18;
+  text-transform: uppercase;
+  color: #F5349F;
+  text-align: center
+`
+const SectionCellGroup = styled.div`
+  max-width: 800px;
+  margin: 0 auto 100px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-column-gap: 20px;
+  padding: 0 20px;
+
+  @media (max-width: 800px) {
+    grid-template-columns: repeat(1, 1fr);
+  }
+`
 
 const IndexPage = () => (
   <div>
@@ -24,7 +47,7 @@ const IndexPage = () => (
       </div>
     </div>
     <div className="Cards">
-      <h2>My Portfolio for Web Development</h2>
+      <h2>Web Development Portfolio</h2>
       <div className="CardGroup">
         <Card
           title="React"
@@ -48,12 +71,21 @@ const IndexPage = () => (
         />
       </div>
     </div>
-    <Section 
+    <Section
       image={require('../images/wallpaper2.jpg')}
       logo={require('../images/logo-react.png')}
       title="React for Websites"
       text="Using React and efficient libraries to build websites. Using React components for reusability, Grid CSS, animation, interactions, dynamic data to deplay websites onto Netlify or Heroku."
     />
+
+    <SectionCaption> My Web Development Skills </SectionCaption>
+    <SectionCellGroup>
+      {staticdata.cells.map(cell => (
+        <Cell
+          title={cell.title}
+          image={cell.image} />
+      ))}
+    </SectionCellGroup>
   </div>
 
 )
