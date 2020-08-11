@@ -103,3 +103,16 @@ a {
   bottom: 0;
   left: 0;
 }
+
+.Hero .Logos {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-gap: 40px;
+  margin: 100px 0;
+}
+
+@media (max-width: 640px) {
+  .Hero .Logos {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}

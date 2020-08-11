@@ -6,18 +6,26 @@ const IndexPage = () => (
     <div className="Hero">
       <div className="HeroGroup">
         <h1>Code and Design<br /> for Web Development</h1>
-        <p>Hi, I'm Adrian. Nice to meet you! I'm very passionate about using technology to make lives easier. Natural strength in creativity and an eye for design.</p>
+        <p>Hi, I'm Adrian. Nice to meet you! I'm very passionate about using technology to make lives easier.</p>
         <Link to="/page-2/">Go to page 2</Link>
-        <svg width="100%" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-          <path fill="#efefef">
-            <animate repeatCount="indefinite" fill="freeze" attributeName="d" dur="10s" values="M0,256L288,160L576,224L864,256L1152,160L1440,160L1440,320L1152,320L864,320L576,320L288,320L0,320Z;
+        <div className="Logos">
+          <img src={require('../images/logo-react.png')} width="50" />
+          <img src={require('../images/Adobe-XD.png')} width="50" />
+          <img src={require('../images/logo-figma.png')} width="50" />
+          <img src={require('../images/Bootstrap-logo.png')} width="50" />
+          <img src={require('../images/CSS.png')} width="50" />
+          <img src={require('../images/JavaScript.png')} width="50" />
+          <img src={require('../images/Gatsby-Monogram.svg')} width="50" />
+        </div>
+        <svg viewBox="0 60 1440 200" xmlns="http://www.w3.org/2000/svg">
+          <path fill="white">
+            <animate repeatCount="indefinite" fill="freeze" attributeName="d" dur="10s" values="M0,160L240,256L480,192L720,192L960,160L1200,96L1440,224L1440,320L1200,320L960,320L720,320L480,320L240,320L0,320Z;
+            
+            M0,224L240,256L480,96L720,224L960,224L1200,96L1440,64L1440,320L1200,320L960,320L720,320L480,320L240,320L0,320Z;
 
-            M0,128L288,288L576,128L864,160L1152,64L1440,288L1440,320L1152,320L864,320L576,320L288,320L0,320Z;
+            M0,192L240,160L480,64L720,256L960,192L1200,128L1440,128L1440,320L1200,320L960,320L720,320L480,320L240,320L0,320Z;
 
-            M0,160L288,0L576,96L864,160L1152,320L1440,224L1440,320L1152,320L864,320L576,320L288,320L0,320Z;
-
-            M0,256L288,160L576,224L864,256L1152,160L1440,160L1440,320L1152,320L864,320L576,320L288,320L0,320Z
-            "
+            M0,160L240,256L480,192L720,192L960,160L1200,96L1440,224L1440,320L1200,320L960,320L720,320L480,320L240,320L0,320Z"
             />
           </path>
         </svg>
