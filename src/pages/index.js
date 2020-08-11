@@ -1,6 +1,8 @@
 import React from 'react'
 import Link from 'gatsby-link'
 import Card from '../components/Card'
+import Section from '../components/Section'
+import Wave from '../components/Wave'
 
 const IndexPage = () => (
   <div>
@@ -18,18 +20,7 @@ const IndexPage = () => (
           <img src={require('../images/JavaScript.png')} width="50" />
           <img src={require('../images/Gatsby-Monogram.svg')} width="50" />
         </div>
-        <svg viewBox="0 60 1440 200" xmlns="http://www.w3.org/2000/svg">
-          <path fill="white">
-            <animate repeatCount="indefinite" fill="freeze" attributeName="d" dur="10s" values="M0,160L240,256L480,192L720,192L960,160L1200,96L1440,224L1440,320L1200,320L960,320L720,320L480,320L240,320L0,320Z;
-            
-            M0,224L240,256L480,96L720,224L960,224L1200,96L1440,64L1440,320L1200,320L960,320L720,320L480,320L240,320L0,320Z;
-
-            M0,192L240,160L480,64L720,256L960,192L1200,128L1440,128L1440,320L1200,320L960,320L720,320L480,320L240,320L0,320Z;
-
-            M0,160L240,256L480,192L720,192L960,160L1200,96L1440,224L1440,320L1200,320L960,320L720,320L480,320L240,320L0,320Z"
-            />
-          </path>
-        </svg>
+        <Wave />
       </div>
     </div>
     <div className="Cards">
@@ -57,7 +48,14 @@ const IndexPage = () => (
         />
       </div>
     </div>
+    <Section 
+      image={require('../images/wallpaper2.jpg')}
+      logo={require('../images/logo-react.png')}
+      title="React for Websites"
+      text="Using React and efficient libraries to build websites. Using React components for reusability, Grid CSS, animation, interactions, dynamic data to deplay websites onto Netlify or Heroku."
+    />
   </div>
+
 )
 
 export default IndexPage
