@@ -1,6 +1,6 @@
 .Header {
     position: fixed;
-    width: 100%;
+    width: 100vw;
     padding: 50px 0;
     /* headers is set to be always on top of everything else */
     z-index: 100;

@@ -6,13 +6,24 @@ const FooterGroup = styled.div`
     padding: 50px 0;
     display: grid;
     grid-gap: 20px;
+    background-size: cover;
+    @media (max-width: 1024px) {
+        padding: 15px 0;
+    }
 `
 const Text = styled.p`
     font-size: 24px;
     font-weight: 600;
     color: #0072b1;
     max-width: 500px
+    text-align: center;
     margin: 0 auto;
+
+    @media (max-width: 1024px) {
+        margin: 0;
+        max-width: 100vw
+        font-size: 20px;
+    }
 `
 const Button = styled.a`
     background: linear-gradient(102deg, #0072B1 0%, #0019B1 100%);
@@ -46,12 +57,26 @@ const LinkGroup = styled.div`
     a:hover {
         color: black;
     }
+
+    @media (max-width: 800px) {
+        margin: 10px auto;
+        grid-template-columns: repeat(1, 1fr);
+        width: 100vw;
+    }
 `
 const Copyright = styled.div`
     color: #0099CD;
     width: 500px;
     margin: 0 auto;
     padding: 0 20px;
+
+    @media (max-width: 1024px) {
+        margin: 0;
+        max-width: 100vw
+        font-size: 20px;
+        padding: 0 2px;
+        text-align: center;
+    }
 `
 
 
