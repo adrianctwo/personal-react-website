@@ -33,7 +33,7 @@ const IndexPage = () => (
       <div className="HeroGroup">
         <h1>Code and Design<br /> for Web Development</h1>
         <p>Hi, I'm Adrian. Nice to meet you! I'm very passionate about using technology to make lives easier.</p>
-        <Link to="/page-2/">Go to page 2</Link>
+        <Link to="/contact">Contact</Link>
         <div className="Logos">
           <img src={require('../images/logo-react.png')} width="50" />
           <img src={require('../images/Adobe-XD.png')} width="50" />
