@@ -3,7 +3,7 @@ import styled from 'styled-components'
 
 const FooterGroup = styled.div`
     background: #E8E8E8;
-    padding: 50px 0;
+    padding: 10px 0;
     display: grid;
     grid-gap: 20px;
     background-size: cover;
@@ -43,10 +43,10 @@ const Button = styled.a`
     }
 `
 const LinkGroup = styled.div`
-    width: 500px;
-    margin: 50px auto;
+    width: 500;
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(4, 1fr);
     text-align: center;
     grid-gap: 10px;
 
@@ -66,9 +66,10 @@ const LinkGroup = styled.div`
 `
 const Copyright = styled.div`
     color: #0099CD;
-    width: 500px;
+    width: 100vw;
     margin: 0 auto;
     padding: 0 20px;
+    text-align: center;
 
     @media (max-width: 1024px) {
         margin: 0;

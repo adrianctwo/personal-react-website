@@ -14,24 +14,20 @@ const SectionGroup = styled.div`
 
     @media (max-width: 640px) {
         height: 820px;
+        
     }
 `
 
 const SectionTitleGroup = styled.div`
     display: grid;
-    grid-template-columns: 300px auto;
     margin: 0 auto auto;
     grid-gap: 20px;
-    grid-template-rows: auto 100%;
-    max-width: 1000px;
+    text-align: center;
+    max-width: 700px;
     padding: 150px 50px;
 
     @media (max-width: 1024px)  {
-        max-width: 800px;
-    }
-    
-    @media (max-width: 720px) {
-        grid-template-columns: 1fr;
+        max-width: 600px;
     }
 `
 

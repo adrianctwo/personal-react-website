@@ -5,6 +5,7 @@ import Section from '../components/Section'
 import Wave from '../components/Wave'
 import staticdata from '../../staticdata.json'
 import Cell from '../components/Cell'
+import EndSection from '../components/EndSection'
 import styled from 'styled-components'
 
 const SectionCaption =styled.p`
@@ -86,6 +87,9 @@ const IndexPage = () => (
           image={cell.image} />
       ))}
     </SectionCellGroup>
+    <EndSection
+            image={require('../images/background1.jpg')}
+    />
   </div>
 
 )
