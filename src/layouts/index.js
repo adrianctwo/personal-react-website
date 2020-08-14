@@ -18,7 +18,7 @@ const Layout = ({ children, data }) => (
     <Header />
     {children()}
     <Footer data={data}>
-      Background from Firewatch by Campo Santo. Website is developed in React. <a href='adrian.e.situ@gmail.com'>Email me</a> to ask me anything. © 2020
+      Background from Firewatch by Campo Santo. Website is developed in React. <a href='mailto:adrian.e.situ@gmail.com'>Email me</a> to ask me anything. © 2020
     </Footer>
   </div>
 )

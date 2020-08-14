@@ -1,12 +1,27 @@
 import React from 'react'
-import Link from 'gatsby-link'
+import MainSection from '../components/MainSection'
+import styled from 'styled-components'
 
-const SecondPage = () => (
-  <div>
-    <h1>Hi from the second page</h1>
-    <p>Welcome to page 2</p>
-    <Link to="/">Go back to the homepage</Link>
-  </div>
+const BodyGroup = styled.div``
+const SectionGroup = styled.div``
+const SectionText = styled.p``
+
+const ContactPage = () => (
+    <div>
+        <MainSection
+            image={require('../images/background1.jpg')}
+            title="Contact"
+            text="Feel free to contact me for any questions or job opportunities"
+        />
+
+        <BodyGroup>
+            <SectionGroup>
+                <SectionText>
+                    
+                </SectionText>
+            </SectionGroup>
+        </BodyGroup>
+    </div>
 )
 
-export default SecondPage
+export default ContactPage
